@@ -7,7 +7,7 @@ import greedy_cut as greedy
 
 
 #prices[n] representa o valor de uma tora tamanho n
-prices = [1, 5, 8, 9, 10, 17, 17, 20, 24, 30]
+prices = [0, 1, 5, 8, 9, 10, 17, 17, 20, 24, 30]
 prices1 = [0, 1, 5, 8, 9, 10, 17, 17, 20, 24, 30]
 
 
@@ -41,5 +41,5 @@ def cutRod (inicio, fim, step): # inc = tamanho inicial da entrada/ fim = fim da
 
 
 #Rodando o algoritmo completo
-cutRod(1, 10, 1)
+cutRod(5,50, 5)
     

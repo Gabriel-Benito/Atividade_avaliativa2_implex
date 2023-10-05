@@ -9,11 +9,13 @@ def greedyCut(p, n):
     cortes = []
     valor = 0
     
+    tamanho_max_corte = len(p) - 1
+    
     while n > 0:
         melhor_corte = 0
         melhor_valor_por_unidade = 0
         
-        for i in range(1, n + 1):
+        for i in range(1, min(n, tamanho_max_corte) + 1):
             valor_por_unidade = p[i]
             if valor_por_unidade > melhor_valor_por_unidade:
                 melhor_valor_por_unidade = valor_por_unidade
